@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="listItem.js"></script>
+    <title>Document</title>
+</head>
+<body onload="carregarAnimes()">
+    <h1>Animes web app</h1>
+    <div>
+        <input type="text" id="novoAnime">
+        <button onclick="adicionarNovoAnime()">Adicionar</button>
+    </div>
+    <div>
+        <h2>Consultar Anime Pelo Id</h2>
+        <input type="number" id="idBuscado">
+        <button onclick="procurarAnimePeloId()">Procurar</button><br>
+        <p id="AnimeBuscado"></p>
+    </div>
+    <div>
+        <h2>Atualizar Anime</h2>
+        <input type="number" id="idAtualizar">
+        <input type="text" id="conteudoAtualizado">
+        <button onclick="atualizarAnimePeloId()">Atualizar</button><br>
+        <p id="statusAtualizacao"></p>
+    </div>
+    <div>
+        <h2>Deleta Anime</h2>
+        <input type="number" id="idDeletar">
+        <button onclick="deletarAnime()">Deletar</button><br>
+        <p id="statusdelecao"></p>
+    </div>
+    <ul id="animes"></ul>
+</body>
+</html>
